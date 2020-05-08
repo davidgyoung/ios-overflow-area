@@ -12,6 +12,8 @@ According to Apple's documentation, when an iOS app using CoreBluetooth to imple
 
 But what is this "overflow area"?  How does it work?
 
+**UPDATE:  The procedure below failed to find the answer.  But I finally figured it out another way.  See [here](http://www.davidgyoungtech.com/2020/05/07/hacking-the-overflow-area).**
+
 ## Test App Behavior
 
 To find out, I built an iOS app [here](https://github.com/davidgyoung/background-advertiser-ios) that advertises GATT Service UUID `2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6`.   The app runs both a BLE central and peripheral.  The app's peripheral code advertises that service, and the app's central code scans for it and connects to it if found.
